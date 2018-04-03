@@ -4,104 +4,105 @@ module.exports = function () {
     'nodeInfos': [
       {
         'name': 'Clientstatistik',
-        'href': 'https://regensburg.freifunk.net/netz/statistik/node/{NODE_ID}/',
-        'image': 'https://grafana.regensburg.freifunk.net/render/d-solo/000000026/node?panelId=1&var-node={NODE_ID}&from=now-1d&width=650&height=350&theme=light&_t={TIME}',
-        'title': 'Clientstatistik für {NODE_ID} - weiteren Statistiken',
-        'width': 650,
-        'height': 350
+        'href': 'https://grafana.freifunk-suedholstein.de/d/000000001/statistiken?orgId=1&var-nodeid={NODE_ID}',
+        'image': 'https://grafana.freifunk-suedholstein.de/render/d-solo/000000001/statistiken?orgId=1&panelId=1&var-nodeid={NODE_ID}&width=650&height=350&from=now-7d&theme=light',
+        'title': 'Knoten {NODE_ID} - weiteren Statistiken'
       },
       {
         'name': 'Trafficstatistik',
-        'href': 'https://regensburg.freifunk.net/netz/statistik/node/{NODE_ID}/',
-        'image': 'https://grafana.regensburg.freifunk.net/render/d-solo/000000026/node?panelId=2&from=now-1d&var-node={NODE_ID}&width=650&height=350&theme=light&_t={TIME}',
-        'title': 'Trafficstatistik für {NODE_ID} - weiteren Statistiken',
-        'width': 650,
-        'height': 350
+        'href': 'https://grafana.freifunk-suedholstein.de/d/000000001/statistiken?orgId=1&var-nodeid={NODE_ID}',
+        'image': 'https://grafana.freifunk-suedholstein.de/render/d-solo/000000001/statistiken?orgId=1&panelId=2&var-nodeid={NODE_ID}&width=650&height=350&from=now-7d&theme=light',
+        'title': 'Knoten {NODE_ID} - weiteren Statistiken'
       },
       {
-        'name': 'Systemlast',
-        'href': 'https://regensburg.freifunk.net/netz/statistik/node/{NODE_ID}/',
-        'image': 'https://grafana.regensburg.freifunk.net/render/d-solo/000000026/node?panelId=4&from=now-1d&var-node={NODE_ID}&width=650&height=350&theme=light&_t={TIME}',
-        'title': 'Systemlast für {NODE_ID} - weiteren Statistiken',
-        'width': 650,
-        'height': 350
-      },
-      {
-        'name': 'Airtime',
-        'href': 'https://regensburg.freifunk.net/netz/statistik/node/{NODE_ID}/',
-        'image': 'https://grafana.regensburg.freifunk.net/render/d-solo/000000026/node?panelId=5&from=now-1d&var-node={NODE_ID}&width=650&height=350&theme=light&_t={TIME}',
-        'title': 'Airtime für {NODE_ID} - weiteren Statistiken',
-        'width': 650,
-        'height': 350
-      }
-    ],
-    'linkInfos': [
-      {
-        'name': 'Statistik für alle Links zwischen diese Knoten',
-        'image': 'https://grafana.regensburg.freifunk.net/render/d-solo/nvSNqoHmz/link?panelId=7&var-node={SOURCE_ID}&var-nodetolink={TARGET_ID}&from=now-1d&&width=650&height=350&theme=light&_t={TIME}',
-        'title': 'Linkstatistik des letzten Tages, min und max aller Links zwischen diesen Knoten',
-        'width': 650,
-        'height': 350
+        'name': 'Airtime 2.4GHz & 5GHz',
+        'href': 'https://grafana.freifunk-suedholstein.de/d/000000001/statistiken?orgId=1&var-nodeid={NODE_ID}',
+        'image': 'https://grafana.freifunk-suedholstein.de/render/d-solo/000000001/statistiken?orgId=1&panelId=8&var-nodeid={NODE_ID}&width=650&height=350&from=now-7d&theme=light',
+        'title': 'Knoten {NODE_ID} - weiteren Statistiken'
       }
     ],
     'globalInfos': [
       {
-        'name': 'Globale Statistik',
-        'href': 'https://regensburg.freifunk.net/netz/statistik',
-        'image': 'https://grafana.regensburg.freifunk.net/render/d-solo/000000028/globals?panelId=2&from=now-7d&&width=650&height=350&theme=light&_t={TIME}',
-        'title': 'Globale Statistik - weiteren Statistiken',
-        'width': 650,
-        'height': 350
+        'name': 'Statistik',
+        'href': 'https://grafana.freifunk-suedholstein.de/d/9mT4Bukmk/globale-statistiken?orgId=1',
+        'image': 'https://grafana.freifunk-suedholstein.de/render/d-solo/9mT4Bukmk/globale-statistiken?orgId=1&panelId=2&width=650&height=350&from=now-7d&theme=light',
+        'title': 'Knoten und Clients'
+      },
+      {
+        'name': 'Firmware Versionen',
+        'href': 'https://grafana.freifunk-suedholstein.de/d/9mT4Bukmk/globale-statistiken?orgId=1',
+        'image': 'https://grafana.freifunk-suedholstein.de/render/d-solo/9mT4Bukmk/globale-statistike?orgId=1&panelId=4&width=650&height=350&from=now-15m&theme=light',
+        'title': 'Firmware Versionen'
+      },
+      {
+        'name': 'Geräte Verteilung',
+        'href': 'https://grafana.freifunk-suedholstein.de/d/9mT4Bukmk/globale-statistiken?orgId=1',
+        'image': 'https://grafana.freifunk-suedholstein.de/render/d-solo/9mT4Bukmk/globale-statistike?orgId=1&panelId=6&width=650&height=350&from=now-15m&theme=light',
+        'title': 'Geräte Versionen'
       }
     ],
     // Array of data provider are supported
     'dataPath': [
-      'https://regensburg.freifunk.net/data/'
+      'https://map.freifunk-suedholstein.de/data/'
     ],
-    'siteName': 'Freifunk Regensburg',
+    'siteName': 'Freifunk Südholstein',
     'mapLayers': [
       {
-        'name': 'Wikimedia OSM Map',
-        'url': 'https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}{r}.png',
+        'name': 'Freifunk Südholstein',
+        'url': 'https://tiles.freifunk-suedholstein.de/{z}/{x}/{y}.png',
+        'config': {
+          'maxZoom': 19,
+          'attribution': '<a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
+        }
+      },
+      {
+        'name': 'Esri.WorldImagery',
+        'url': '//server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
         'config': {
           'maxZoom': 20,
-          'subdomains': '1234',
-          'attribution': '<a href="https://wikimediafoundation.org/wiki/Maps_Terms_of_Use" rel="noopener" target="_blank">Wikimedia maps</a><a href="http://www.openmaptiles.org/" target="_blank">&copy; OpenMapTiles</a> <a href="http://www.openstreetmap.org/about/" target="_blank" rel="noopener">&copy; OpenStreetMap contributors</a>',
-          'start': 6
+          'attribution': 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
         }
-      }
+      },
     ],
     // Set a visible frame
     'fixedCenter': [
       // Northwest
       [
-        49.3522,
-        11.7752
+        53.9286,
+        9.3356
       ],
       // Southeast
       [
-        48.7480,
-        12.8917
+        53.3743,
+        10.7308
       ]
     ],
     'domainNames': [
       {
-        'domain': 'ffrgb-bat15',
-        'name': 'Regensburg'
+        'domain': 'ffrz',
+        'name': 'Lauenburg'
       },
       {
-        'domain': 'ffrgb',
-        'name': 'Regensburg'
+        'domain': 'ffod',
+        'name': 'Stormarn'
+      },
+      {
+       'domain': 'ffsh',
+       'name': 'Südholstein'
       }
     ],
     'linkList': [
       {
+        'title': 'Homepage',
+        'href': 'https://www.freifunk-suedholstein.de'
+      },
+      {
         'title': 'Impressum',
-        'href': '/verein/impressum/'
+        'href': 'https://www.freifunk-suedholstein.de/impressum/'
       },
       {
         'title': 'Datenschutz',
-        'href': '/verein/datenschutz/'
+        'href': 'https://www.freifunk-suedholstein.de/datenschutz/'
       }
     ]
   };
